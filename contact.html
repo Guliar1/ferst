@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты | ЧистоСервис</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff;
+    }
+    header {
+      background-color: #198754;
+      color: #fff;
+    }
+    footer {
+      background-color: #198754;
+      color: #fff;
+    }
+    .contact-info i {
+      color: #198754;
+    }
+    .fs-18 {
+      font-size: 18px;
+    }
+    .fs-16 {
+      font-size: 16px;
+    }
+    .fs-24 {
+      font-size: 24px;
+    }
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #28a745; /* зелёный */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #1e7e34; /* более тёмно-зелёный при наведении */
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <div><span><img style="max-width: 60px; max-height: 60px; margin: 0 10px 0 0;" src="/img/logo.jpeg" alt=""></span></div>
+        <a class="navbar-brand fw-bold text-success" href="index.html">ЧистоДом</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-success fs-18 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link  text-success fs-18 text-decoration-none" href="services.html">Услуги</a></li>
+            <li class="nav-item"><a class="nav-link text-success fs-18 text-decoration-none" href="about.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link text-success active fw-bold fs-18 text-decoration-none" href="contact.html">Контакты</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="py-4 mb-4">
+  <div class="container text-center">
+    <h1 class="mb-0">Свяжитесь с нами</h1>
+    <p class="mb-0 fs-24">Клининговая компания «ЧистоСервис»</p>
+  </div>
+</header>
+
+<!-- Контактная информация и форма -->
+<div class="container mb-5">
+  <div class="row">
+    <!-- Контактная информация -->
+    <div class="col-md-5 mb-4">
+      <h3 class="mb-3">Контактная информация</h3>
+      <div class="contact-info">
+        <p class="fs-18"><i class="bi bi-geo-alt-fill"></i> Адрес: г. Махачкала, ул. Абубакарова, 12</p>
+        <p class="fs-18"><i class="bi bi-telephone-fill"></i> Телефон: +7 (928) 000-00-00</p>
+        <p class="fs-18"><i class="bi bi-envelope-fill"></i> Email: info@chistoservice.ru</p>
+        <p class="fs-18"><i class="bi bi-clock-fill"></i> Время работы: Пн–Сб: 9:00–19:00</p>
+      </div>
+    </div>
+
+    <!-- Форма обратной связи -->
+    <div class="col-md-7">
+      <h3 class="mb-3">Напишите нам</h3>
+      <form id="contact-form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Ваше имя</label>
+          <input type="text" class="form-control" id="name" placeholder="Введите имя" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email адрес</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Отправить</button>
+      </form>
+      
+      <!-- Блок для отображения результата -->
+      <div id="form-response" class="mt-3" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Яндекс карта -->
+<div class="container mb-5">
+  <h3 class="mb-3">Мы на карте</h3>
+  <div style="width: 100%; height: 400px;">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b8fc1b9b4498e30c0f423cd803c3d7c35fdd2b7aa6d47cb52de65b3f589a29b&amp;source=constructor"
+            width="100%" height="400" frameborder="0"></iframe>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="py-4 mt-auto text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 ЧистоСервис. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<!-- Иконки Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>

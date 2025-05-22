@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>О нас | ЧистоСервис</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #fff;
+    }
+    header, footer {
+      background-color: #198754;
+      color: white;
+    }
+    .section-title {
+      color: #198754;
+    }
+    .advantage-icon {
+      font-size: 2rem;
+      color: #198754;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .fs-18 {
+      font-size: 18px;
+    }
+    .fs-16 {
+      font-size: 16px;
+    }
+    .fs-24 {
+      font-size: 24px;
+    }
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #28a745; /* зелёный */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #1e7e34; /* более тёмно-зелёный при наведении */
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body>
+   <!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <div><span><img style="max-width: 60px; max-height: 60px; margin: 0 10px 0 0;" src="/img/logo.jpeg" alt=""></span></div>
+        <a class="navbar-brand fw-bold text-success" href="index.html">ЧистоДом</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-success fs-18 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link  text-success fs-18 text-decoration-none" href="services.html">Услуги</a></li>
+            <li class="nav-item"><a class="nav-link text-success active fw-bold fs-18 text-decoration-none" href="about.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link text-success fs-18 text-decoration-none" href="contact.html">Контакты</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header -->
+<header class="py-4 mb-4">
+  <div class="container text-center">
+    <h1 class="mb-0">О нашей компании</h1>
+    <p class="lead mb-0 fs-18">Клининговая компания «ЧистоСервис» — профессионализм и забота о чистоте</p>
+  </div>
+</header>
+
+<!-- О компании -->
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h2 class="section-title mb-3">Кто мы такие</h2>
+      <p class="fs-18">Компания «ЧистоСервис» работает на рынке клининговых услуг с 2018 года. Мы предоставляем широкий спектр профессиональной уборки для жилых и коммерческих помещений. Наша команда — это квалифицированные сотрудники, готовые выполнить уборку любой сложности качественно и в срок.</p>
+      <p>Мы используем только сертифицированные моющие средства, безопасные для людей, животных и окружающей среды. Наша миссия — делать ваш дом и офис чистыми, уютными и комфортными.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://img.freepik.com/free-photo/cleaning-service-concept_23-2148470605.jpg?w=826&t=st=1714410000~exp=1714410600~hmac=ff70e20e174e5569d76adffed8d6930d57e59c759af3d9f30ef30e8b2b0a1583" class="img-fluid rounded" alt="О компании">
+    </div>
+  </div>
+</div>
+
+<!-- Наши преимущества -->
+<div class="container mb-5">
+  <h2 class="section-title text-center mb-4">Почему выбирают нас</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-stars advantage-icon mb-2"></i>
+      <h5>Гарантия качества</h5>
+      <p>Каждая уборка проходит контроль. Мы отвечаем за результат.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-clock advantage-icon mb-2"></i>
+      <h5>Пунктуальность</h5>
+      <p>Работаем строго по графику, без опозданий и переносов.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-shield-check advantage-icon mb-2"></i>
+      <h5>Безопасные средства</h5>
+      <p>Только экологичная и сертифицированная химия.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Наша команда -->
+<div class="container mb-5">
+  <h2 class="section-title text-center mb-4">Наша команда</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4 team-member">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Мария" class="mb-2">
+      <h5>Мария Ибрагимова</h5>
+      <p class="text-muted">Менеджер по работе с клиентами</p>
+    </div>
+    <div class="col-md-4 mb-4 team-member">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Али" class="mb-2">
+      <h5>Али Гусейнов</h5>
+      <p class="text-muted">Старший уборщик</p>
+    </div>
+    <div class="col-md-4 mb-4 team-member">
+      <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Фатима" class="mb-2">
+      <h5>Фатима Магомедова</h5>
+      <p class="text-muted">Специалист по химчистке</p>
+    </div>
+  </div>
+</div>
+
+<!-- Блок отзывов -->
+<div class="container mb-5">
+  <h2 class="section-title text-center mb-4">Отзывы клиентов</h2>
+  
+  <!-- Форма -->
+  <div class="mb-4">
+    <form id="review-form">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="reviewer-name" placeholder="Ваше имя" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="review-text" rows="3" placeholder="Ваш отзыв..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Оставить отзыв</button>
+    </form>
+  </div>
+
+  <!-- Список отзывов -->
+  <div id="reviews-list">
+    <!-- Отзывы будут добавляться сюда -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="py-4 text-center mt-auto">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 ЧистоСервис. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/add_review.js"></script>
+</body>
+</html>
